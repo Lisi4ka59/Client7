@@ -52,6 +52,8 @@ public class ClientValidation {
                                 return new PackagedCommand[]{new RemoveHeadValid().removeHeadValid(commandText)};
                             case ("remove_first") :
                                 return new PackagedCommand[]{new RemoveFirstValid().removeFirstValid(commandText)};
+                            case ("login") :
+                                return new PackagedCommand[]{new LogIn().packagedCommand()};
                             default:
                                 System.out.println("Unknown command! Type \"help\" to open command list");
                         }
