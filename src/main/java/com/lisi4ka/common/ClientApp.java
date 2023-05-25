@@ -39,7 +39,6 @@ public class ClientApp {
                     if (selector.select() > 0) {
                         try {
                             doneStatus = processReadySet(selector.selectedKeys());
-
                         } catch (ConnectException ex) {
                             System.out.println("Lost server connection. Repeat connecting in 10 seconds");
                             break;
